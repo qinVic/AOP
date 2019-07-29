@@ -1,0 +1,4 @@
+jwt:
+  config:
+    key: jwt     #签名密钥
+    ttl: 3600000 #过期时间 1小时
