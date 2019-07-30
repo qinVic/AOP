@@ -1,6 +1,7 @@
 package com.vic.aop.utils;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.Data;
@@ -55,19 +56,22 @@ public class JwtUtils {
         // 生成加密后签名的密钥
         SecretKey secretKey = generalKey();
 
-        return Jwts.builder()
+        JwtBuilder jwtBuilder = Jwts.builder()
                 // JWT_ID
                 .setId(id)
                 // 主题
                 .setSubject(name)
                 // 签发时间
                 .setIssuedAt(new Date())
-                .setClaims(map)
-                // 失效时间
-                .setExpiration(new Date(expireTime))
                 // 签名算法以及密钥
-                .signWith(SignatureAlgorithm.HS256, secretKey)
-                .compact();
+                .signWith(SignatureAlgorithm.HS256, secretKey);
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            jwtBuilder.claim(entry.getKey(), entry.getValue());
+        }
+        // 失效时间
+        jwtBuilder.setExpiration(new Date(expireTime));
+
+        return jwtBuilder.compact();
     }
 
     /**
