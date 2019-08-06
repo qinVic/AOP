@@ -36,7 +36,7 @@ public class JwtUtils {
      * 加密密钥
      * @return SecretKeySpec
      */
-    public SecretKeySpec generalKey() {
+    private SecretKeySpec generalKey() {
         // 将本地密钥解码
         byte[] decodeKey = Base64.decodeBase64(key);
         // 将解码后的密钥使用AES算法构成一个密钥
@@ -52,7 +52,7 @@ public class JwtUtils {
      */
     public String createToken(String id, String name, Map<String, Object> map) {
         // 过期时间
-        Long expireTime = System.currentTimeMillis() + ttl;
+        long expireTime = System.currentTimeMillis() + ttl;
         // 生成加密后签名的密钥
         SecretKey secretKey = generalKey();
 

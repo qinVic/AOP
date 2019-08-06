@@ -25,7 +25,7 @@ public class LogAspect {
     public void logAop(){}
 
     @Around("logAop()")
-    public Object aroundAop(ProceedingJoinPoint joinPoint) {
+    public Object aroundAop(ProceedingJoinPoint joinPoint) throws Throwable {
         LOGGER.info("【项目日志打印】======{}.{}() start ======,参数:\n{}", joinPoint.getSignature().getDeclaringTypeName(),
                 joinPoint.getSignature().getName(), argsToString(joinPoint.getArgs()));
         DateTime startTime = new DateTime();
@@ -35,11 +35,12 @@ public class LogAspect {
         try {
             // 执行的方法
             response = joinPoint.proceed();
-        } catch (Throwable throwable) {
+        } catch (Exception e) {
             endTime = new DateTime();
             interval = new Interval(startTime, endTime);
             LOGGER.error("【项目日志打印】======{}.{}() end ======,响应时间:{}毫秒", joinPoint.getSignature().getDeclaringTypeName(),
                     joinPoint.getSignature().getName(), interval.toDurationMillis());
+            throw e;
         }
         endTime = new DateTime();
         interval = new Interval(startTime, endTime);
