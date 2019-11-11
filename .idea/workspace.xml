@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae426376-ce4a-484c-947f-fa68767dc26e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aop.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vic/aop/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vic/aop/aop/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vic/aop/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vic/aop/utils/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vic/aop/AopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vic/aop/AopApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -62,6 +59,10 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -79,6 +80,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myself\myPro\aop\src\main\java\com\vic\aop\concurrent\test2" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -91,31 +97,74 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AopApplication">
-    <configuration name="QiniuTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.GuavaTest">
+    <configuration name="CountDiwnLatchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vic.aop.concurrent.test3.CountDiwnLatchTest" />
       <module name="aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vic.test.*" />
+          <option name="PATTERN" value="com.vic.aop.concurrent.test3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.vic.test" />
-      <option name="MAIN_CLASS_NAME" value="com.vic.test.QiniuTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ExchangerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vic.aop.concurrent.test3.ExchangerTest" />
       <module name="aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vic.aop.*" />
+          <option name="PATTERN" value="com.vic.aop.concurrent.test3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForkJoinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vic.aop.concurrent.test3.ForkJoinTest" />
+      <module name="aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vic.aop.concurrent.test3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuavaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vic.aop.concurrent.test3.GuavaTest" />
+      <module name="aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vic.aop.concurrent.test3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadPoolExcutorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vic.aop.concurrent.test3.ThreadPoolExcutorTest" />
+      <module name="aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vic.aop.concurrent.test3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.aop.AopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,8 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AopApplication" />
-        <item itemvalue="JUnit.QiniuTest.test" />
+        <item itemvalue="Application.GuavaTest" />
+        <item itemvalue="Application.ThreadPoolExcutorTest" />
+        <item itemvalue="Application.ForkJoinTest" />
+        <item itemvalue="Application.ExchangerTest" />
+        <item itemvalue="Application.CountDiwnLatchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +195,16 @@
       <workItem from="1564481031811" duration="70000" />
       <workItem from="1564542885699" duration="664000" />
       <workItem from="1564543623211" duration="733000" />
-      <workItem from="1565074577026" duration="2742000" />
+      <workItem from="1565074577026" duration="3233000" />
+      <workItem from="1568092594061" duration="5120000" />
+      <workItem from="1568597512082" duration="600000" />
+      <workItem from="1569465469569" duration="2300000" />
+      <workItem from="1570497041781" duration="597000" />
+      <workItem from="1572317136782" duration="29502000" />
+      <workItem from="1572574080239" duration="4357000" />
+      <workItem from="1573008796348" duration="23999000" />
+      <workItem from="1573204936345" duration="869000" />
+      <workItem from="1573262113248" duration="24404000" />
     </task>
     <task id="LOCAL-00001" summary="AOP日志打印">
       <created>1562823306116</created>
@@ -166,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564481082585</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加上传七牛云工具类">
+      <created>1565077615068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565077615068</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +257,12 @@
     <MESSAGE value="AOP日志打印" />
     <MESSAGE value="添加生成token的工具类" />
     <MESSAGE value="修改生成token的工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改生成token的工具类" />
+    <MESSAGE value="添加上传七牛云工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加上传七牛云工具类" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/aop$TicketWindow.ic" NAME="TicketWindow Coverage Results" MODIFIED="1572421566281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.vic.aop.concurrent.test.*</FILTER>
+    </SUITE>
   </component>
 </project>
